@@ -78,3 +78,4 @@ while True:
 6. Si estoy en el estado Exploted, debe mostrar una calavera, y una vez se presione el 'touch' debe inicializar el tiempo al original, y cambiar de estado. (Funciona)
 7. Si cambie de estado Exploted a estado Settings, al presionar A o B, debe cambiar el tiempo inicial. (Funciona)
 
+

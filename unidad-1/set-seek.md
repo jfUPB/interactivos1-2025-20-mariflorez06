@@ -12,3 +12,4 @@
 
 - ¿Qué es el arte/diseño generativo?:  El arte o diseño generativo son las creaciones hechas por un sistema autónomo, sea un programa, un algoritmo, un proceso mecánico o algo similar. El artista es quien da las reglas y los parámetros iniciales.
   
+
