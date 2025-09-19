@@ -114,8 +114,12 @@ Ahora en la consola veo todo el tiempo que valores est√° recibiendo la aplicaci√
 [Link nueva aplicacion](https://editor.p5js.org/mariflorez06/sketches/AfCMq7qva)
 
 ## Nota
+
+Mi nota propuesta: 3.45
+
 1. Profundidad en la indagacion: En desarrollo (3.4), respondi las preguntas que habian durante las actividades, pero me hicieron falta algunas que no sabia muy bien como responder.
 2. Calidad de la experimentacion: En desarrollo (3.4), realice los experimentos que me indicaban las actividades sin ir mucho mas alla.
 3. Analisis y reflexion: Logrado (3.6), escribi y coloque imagenes en mi bitacora que corresponde a los indicado en cada actividad, pero no realice mucha explicacion teorica.
 4. Apropiacion y articulacion de conceptos: En desarrollo (3.4), los conceptos estan explicados de manera muy basica.
+
 
