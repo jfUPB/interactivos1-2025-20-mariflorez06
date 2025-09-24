@@ -1,4 +1,56 @@
 # Unidad 3
+## Fase: Set-seek
+### Actividad 1
+Código semáforo:
+```python
+from microbit import *
+import utime
+
+
+class Semaforo():
+    def __init__(self,fila,timeR,timeY,timeG):
+        self.state = "waitR"
+        self.startTime = utime.ticks_ms()
+        self.fila = fila
+        self.timeR = timeR
+        self.timeY = timeY
+        self.timeG = timeG
+        display.set_pixel(0,self.fila,9)
+
+    def update(self):
+
+        if self.state == "waitR":
+            if utime.ticks_diff(utime.ticks_ms(),self.startTime) >= self.timeR:
+                display.set_pixel(0,self.fila,0)
+                display.set_pixel(2,self.fila,9)
+                self.startTime = utime.ticks_ms()
+                self.state = "waitY"
+                    
+        elif self.state == "waitY":
+            if utime.ticks_diff(utime.ticks_ms(),self.startTime) >= self.timeY:
+                display.set_pixel(2,self.fila,0)
+                display.set_pixel(4,self.fila,9)
+                self.startTime = utime.ticks_ms()
+                self.state = "waitG"
+
+        elif self.state == "waitG":
+            if utime.ticks_diff(utime.ticks_ms(),self.startTime) >= self.timeG:
+                display.set_pixel(4,self.fila,0)
+                display.set_pixel(0,self.fila,9)
+                self.startTime = utime.ticks_ms()
+                self.state = "waitR"
+
+semaforo1 = Semaforo(0,5000,2000,3000)
+semaforo2 = Semaforo(2,3000,1000,2000)
+semaforo3 = Semaforo(4,4000,3000,2000)
+
+while True:
+    semaforo1.update()
+    semaforo2.update()
+    semaforo3.update()
+```
+### Actividad 2
+
 ## 🤔 Fase: Reflect
 ### Autoevaluación
 #### Parte 1:
@@ -16,4 +68,5 @@
    Un vector de prueba es una manera de testear que el programa funcione tal y como nosotros esperamos, ya que verificamos que realice las acciones que tiene que hacer, que cambie de estado tras una accion o evento, etc. Es muy útil porque nos muestra que el programa si esta funcionando como seplanteó.
 
    
+
 
