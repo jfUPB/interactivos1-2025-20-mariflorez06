@@ -43,8 +43,15 @@ d) Coloca en tu bitácora capturas de pantalla del sistema completo funcionando.
 https://github.com/user-attachments/assets/0e8265ae-49ba-4b11-9814-39ea476170ff
 https://github.com/user-attachments/assets/4be3dcbd-9665-4719-b885-cfd523f8d328
 
+### Actividad 3
 
+a) ¿Cuál es la función principal de express.static(‘public’) en este servidor?
+  = 
 
-
+b) Explica detalladamente el flujo de un mensaje táctil: 
+  *¿Qué evento lo envía desde el móvil? =* socket.**emit**('message', payload).
+  *¿Qué evento lo recibe el servidor? =* **socket.on**('message',(message) => { ... } ).
+  *¿Qué hace el servidor con él? =* console.log('Received message =>', message); -> Imprime el mensaje. socket.broadcast.emit('message', message); -> Reenvia el mensaje a los demas clientes.
+  *¿Qué evento lo envía el servidor al escritorio? =* 
 
 
