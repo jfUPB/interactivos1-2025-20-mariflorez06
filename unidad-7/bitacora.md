@@ -48,10 +48,30 @@ https://github.com/user-attachments/assets/4be3dcbd-9665-4719-b885-cfd523f8d328
 a) ¿Cuál es la función principal de express.static(‘public’) en este servidor?
   = 
 
-b) Explica detalladamente el flujo de un mensaje táctil: 
-  *¿Qué evento lo envía desde el móvil? =* socket.**emit**('message', payload).
-  *¿Qué evento lo recibe el servidor? =* **socket.on**('message',(message) => { ... } ).
-  *¿Qué hace el servidor con él? =* console.log('Received message =>', message); -> Imprime el mensaje. socket.broadcast.emit('message', message); -> Reenvia el mensaje a los demas clientes.
-  *¿Qué evento lo envía el servidor al escritorio? =* 
+b) Explica detalladamente el flujo de un mensaje táctil:  
+
+  *¿Qué evento lo envía desde el móvil? =* socket.**emit**('message', payload).  
+  
+  *¿Qué evento lo recibe el servidor? =* **socket.on**('message',(message) => { ... } ).  
+  
+  *¿Qué hace el servidor con él? =* console.log('Received message =>', message); -> Imprime el mensaje. socket.broadcast.emit('message', message); -> Reenvia el mensaje a los demas clientes.  
+  
+  *¿Qué evento lo envía el servidor al escritorio? =* El servidor emite un **'message'** y en los clientes del escritorio habria algo como ** (message) => { /* actualizar cursor/pantalla */ }) ** que recibe y procesa la informacion para mostrar la posicion tactil.  
+  
+  *¿Por qué se usa socket.broadcast.emit en lugar de io.emit o socket.emit en este caso? =* Con **broadcast** se evitan duplicados y ahorro de trafico, ademas evite que el emisor procese redundancias.  
+
+c) Si conectaras dos computadores de escritorio y un móvil a este servidor, y movieras el dedo en el móvil, ¿Quién recibiría el mensaje retransmitido por el servidor?
+  = Lo recibirian los dos gracias al broadcast, porque manda a todos los sockets conectados menos a quien emitio originalmente.
+
+d) ¿Qué información útil te proporcionan los mensajes console.log en el servidor durante la ejecución?
+  = Indican cuando un cliente abre conexion, muestra los mensajes tactiles (X y Y), te avisa si un cliente se desconecta y confirma si el servidor arranco correctamente y que puerto esta escuchando.
+
+### Actividad 4
+
+![diagrama u7-28](https://github.com/user-attachments/assets/7ee0c0a9-d3a9-4b76-ab41-b72c8a8e88a5)
+
+### Auto evaluacion
+
+Mi nota es un 3, ya que realice 4 actividades completas.
 
 
