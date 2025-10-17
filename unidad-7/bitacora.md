@@ -33,14 +33,18 @@ b) Describe la función de touchMoved() y por qué se usa la variable threshold 
   = touchMoved() es la función que va a leer los touch del celular (o del mouse del computador), dandole variales de mouseX y mouseY; el threshold sirve como un minimo, ya que comparamos este minimo con la nueva posicion del movimiento y si es significativo, se redibujará el circulo en la nueva posición.
 
 c) Compara brevemente Dev Tunnels con simplemente usar la IP local. ¿Cuáles son las ventajas y desventajas de cada uno?
-| Dev Tunnels | IP local |
-|-------------|----------|
-|        Ventajas        |
-|------------------------|
-| Deja trabajar con dos dispositivos al tiempo | 
-    
+
+**Dev Tunnels:** Se puede acceder desde cualquier lugar con internet, Es de menor velocidad, Se puede probar desde cualquier dispositivo.
+
+**IP Local:** Solo funciona dentro de la misma red o equipo, Muy rapida, Solo si el dispositivo esta en la misma red y usas la IP local
 
 d) Coloca en tu bitácora capturas de pantalla del sistema completo funcionando. Esto lo puedes hacer abriendo tanto el mobile como el desktop en tu computador y tomando una captura de pantalla de todos los involucrados (celular, computador y terminal).
+
+https://github.com/user-attachments/assets/0e8265ae-49ba-4b11-9814-39ea476170ff
+https://github.com/user-attachments/assets/4be3dcbd-9665-4719-b885-cfd523f8d328
+
+
+
 
 
 
